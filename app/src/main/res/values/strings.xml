@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PreN</string>
+    <string name="google_api_key_value">add_your_api_key_here</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+</resources>

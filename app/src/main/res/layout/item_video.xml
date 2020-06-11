@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:maxHeight="200dp"
+        android:id="@+id/thumbnail"
+        android:src="@drawable/icon_youtube"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_title"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:textSize="17sp"
+
+        android:padding="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="10dp"
+        android:text="video Title"
+
+        android:layout_below="@id/thumbnail"
+        />
+
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

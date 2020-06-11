@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="activity.VideoDetailsActivity">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/youtube_player"
+        />
+
+    <RelativeLayout
+        android:id="@+id/wrapper"
+        android:layout_below="@id/youtube_player"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/video_title"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/channel_name"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:textSize="13sp"
+            android:layout_below="@id/video_title"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_similar"
+        android:text="Similar Videos"
+        android:paddingTop="5dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/wrapper"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/video_recy"
+        android:layout_below="@id/label_similar"
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
